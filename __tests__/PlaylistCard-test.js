@@ -8,7 +8,7 @@ const store = createStore(reducer);
 
 var playlist = {
   title: 'Test playlist',
-  Episodes: [{title: 'one episode'}],
+  Episodes: [{title: 'one episode', Podcast: {artworkUrl: 'http://www.iconsfind.com/wp-content/uploads/2015/11/20151104_5639735648c34.png'}}],
   totalTime: 100
 }
 
