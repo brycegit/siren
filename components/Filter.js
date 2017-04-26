@@ -31,7 +31,6 @@ class Filter extends Component {
 
   getNames = () => {
     var names = ['Podcasts'];
-    console.log('Inbox: ', this.props.inbox);
     Object.keys(this.props.inbox).forEach((key) => {
       names.push(this.props.inbox[key].title);
     });

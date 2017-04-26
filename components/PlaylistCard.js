@@ -60,7 +60,6 @@ class PlaylistCard extends Component {
       this.imageClass = 'single';
       this.imagesArr = this.imagesArr.slice(0,1);
     }
-    console.log(this.imagesArr);
   }
 
   componentWillMount(){
@@ -83,7 +82,6 @@ class PlaylistCard extends Component {
         onRightActionActivate={() => this.props.dispatch(swipeActions.updateRightActivation(true))}
         onRightActionDeactivate={() => this.props.dispatch(swipeActions.updateRightActivation(false))}
         onRightActionComplete={() => {
-          console.log('this is the playlist ud', this.props.playlist.id)
             this.removePlaylist(this.props.playlist.id);
             this.props.dispatch(playlistActions.removePlaylist(this.props.playlist.id));
         }}

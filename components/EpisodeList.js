@@ -228,7 +228,6 @@ class EpisodeList extends Component {
     if (playingEpisode && playingEpisode.feed.enclosure.url === selectedEpisode.feed.enclosure.url) {
       this.handleRemovePlayingEpisode(id);
     } else {
-      console.log('triggered remove ep inbox')
       this.props.dispatch(mainActions.removeEpisodeFromInbox(id));
     }
 

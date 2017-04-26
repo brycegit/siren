@@ -61,7 +61,6 @@ class PlaylistCardNoSwipe extends Component {
       this.imageClass = 'single';
       this.imagesArr = this.imagesArr.slice(0,1);
     }
-    console.log(this.imagesArr);
   }
 
   componentWillMount(){

@@ -24,8 +24,7 @@ class Header extends Component {
 
   render() {
     let filter = null;
-    if (this.props.view === 'Inbox' ||
-        this.props.view === 'Playlists') {
+    if (this.props.view === 'Inbox') {
       filter = (<View>
         <ModalComponent>
           <Filter/>
